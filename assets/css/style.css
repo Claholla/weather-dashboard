@@ -1,0 +1,131 @@
+#hero {
+    background: rgb(92,210,59);
+    background: linear-gradient(0deg, rgba(92,210,59,1) 0%, rgba(27,179,185,1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#search-head {
+    padding-bottom: 20px;
+    padding-left: 55px;
+    padding-top: 10px;
+}
+
+#search-bar {
+    padding-left: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    padding: 10px;
+}
+
+.search-history {
+    padding-top: 20px;
+}
+
+/* controls for visibility of search history buttons 
+#history1 {
+    display: none;
+}
+
+#history2 {
+    display: none;
+}
+
+#history3 {
+    display: none;
+}
+
+#history4 {
+    display: none;
+}
+
+#history5 {
+    display: none;
+}
+
+#history6 {
+    display: none;
+}
+
+#history7 {
+    display: none;
+}
+
+#history8 {
+    display: none;
+}
+*/
+.weather-result {
+    border: 2px solid black;
+    padding-left: 20px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+#city-name {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.weather-result p, .weather-result span {
+    font-size: 1.3em;
+}
+
+.secondary-results {
+    padding-bottom: 10px;
+}
+
+#five-day {
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#five-day-title {
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.fd-card {
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    margin-right: 10px;
+}
+
+h5 {
+    font-size: 1.3em;
+    padding-bottom: 8px;
+}
+
+.fd-secondary {
+    font-size: 1.2em;
+    padding-bottom: 8px;
+}
+
