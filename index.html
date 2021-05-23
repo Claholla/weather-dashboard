@@ -21,78 +21,69 @@
     </header>
 
     <section class="container">
-        <div class="row align-items-start">
+        <div class="row">
             <div class="col-3">
                 <h2 id="search-head">
                     Search for a city:
                 </h2>
-                <article class="input-group" id="search-bar">
+                <div class="input-group mb-3" id="search-bar">
                     <div class="form-outline">
-                      <input id="search-input" type="search" id="form1" class="form-control" value="Saint Paul" />
+                      <input id="search-input" type="search" id="form1" class="form-control" />
                     </div>
                     <button id="search-button" type="button" class="btn btn-primary">
-                      <i class="fas fa-search">  Search</i>
+                      <i class="fas fa-search"></i>
                     </button>
-                </article>
-                <div class="search-history">
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-secondary" type="button" id="history1">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history2">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history3">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history4">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history5">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history6">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history7">Button</button>
-                        <button class="btn btn-secondary" type="button" id="history8">Button</button>
-                    </div>
+                </div>
+                <div>
+                    <div class="d-grid gap-2" id="search-history"></div>
                 </div>
             </div>
                 <div class="col-9">
-                    <div class="weather-result">
-                        <h3 id="city-name">Saint Paul (05/20/2021)<span id="hero-icon"></span></h3>
-                        <p class="secondary-results">Temp:<span id="temp-data"></span></p>
-                        <p class="secondary-results">Wind:<span id="wind-data"></span></p>
-                        <p class="secondary-results">Humidity:<span id="humidity-data"></span></p>
-                        <p class="secondary-results">UV Index:<span id="UV-data"></span></p>
+                    <div class="weather-result row m-3">
+                        <h3 id="city-name"></h3>
+                        <p class="secondary-results" id="temp-data"></p>
+                        <p class="secondary-results" id="wind-data"></span></p>
+                        <p class="secondary-results" id="humidity-data"></p>
+                        <p class="secondary-results" id="UV-data"><span id="UV-index"></span></p>
                     </div>
                     <h4 id="five-day-title">
                         5-Day Forecast:
                     </h4>
                     <article class="row" id="five-day">
                         <div class="fd-card col">
-                            <h5 class="fd-date" id="fd-date-1">Date Of Day</h5>
+                            <h5 class="fd-date" id="fd-date-1"></h5>
                             <span id="fd-icon-1"></span>
-                            <p class="fd-secondary">Temp:<span id="fd-temp-1"></span></p>
-                            <p class="fd-secondary">Wind:<span id="fd-wind-1"></span></p>
-                            <p class="fd-secondary">Humidity:<span id="fd-humidity-1"></span></p>
+                            <p class="fd-secondary"><span id="fd-temp-1"></span></p>
+                            <p class="fd-secondary"><span id="fd-wind-1"></span></p>
+                            <p class="fd-secondary"><span id="fd-humidity-1"></span></p>
                         </div>
                         <div class="fd-card col">
-                            <h5 class="fd-date" id="fd-date-2">Date Of Day</h5>
+                            <h5 class="fd-date" id="fd-date-2"></h5>
                             <span id="fd-icon-2"></span>
-                            <p class="fd-secondary">Temp:<span id="fd-temp-2"></span></p>
-                            <p class="fd-secondary">Wind:<span id="fd-wind-2"></span></p>
-                            <p class="fd-secondary">Humidity:<span id="fd-humidity-2"></span></p>
+                            <p class="fd-secondary"><span id="fd-temp-2"></span></p>
+                            <p class="fd-secondary"><span id="fd-wind-2"></span></p>
+                            <p class="fd-secondary"><span id="fd-humidity-2"></span></p>
                         </div>
                         <div class="fd-card col">
-                            <h5 class="fd-date" id="fd-date-3">Date Of Day</h5>
+                            <h5 class="fd-date" id="fd-date-3"></h5>
                             <span id="fd-icon-3"></span>
-                            <p class="fd-secondary">Temp:<span id="fd-temp-3"></span></p>
-                            <p class="fd-secondary">Wind:<span id="fd-wind-3"></span></p>
-                            <p class="fd-secondary">Humidity:<span id="fd-humidity-3"></span></p>
+                            <p class="fd-secondary"><span id="fd-temp-3"></span></p>
+                            <p class="fd-secondary"><span id="fd-wind-3"></span></p>
+                            <p class="fd-secondary"><span id="fd-humidity-3"></span></p>
                         </div>
                         <div class="fd-card col">
-                            <h5 class="fd-date" id="fd-date-4">Date Of Day</h5>
+                            <h5 class="fd-date" id="fd-date-4"></h5>
                             <span id="fd-icon-4"></span>
-                            <p class="fd-secondary">Temp:<span id="fd-temp-4"></span></p>
-                            <p class="fd-secondary">Wind:<span id="fd-wind-4"></span></p>
-                            <p class="fd-secondary">Humidity:<span id="fd-humidity-4"></span></p>
+                            <p class="fd-secondary"><span id="fd-temp-4"></span></p>
+                            <p class="fd-secondary"><span id="fd-wind-4"></span></p>
+                            <p class="fd-secondary"><span id="fd-humidity-4"></span></p>
                         </div>
                         <div class="fd-card col">
-                            <h5 class="fd-date" id="fd-date-5">Date Of Day</h5>
+                            <h5 class="fd-date" id="fd-date-5"></h5>
                             <span id="fd-icon-5"></span>
-                            <p class="fd-secondary">Temp:<span id="fd-temp-5"></span></p>
-                            <p class="fd-secondary">Wind:<span id="fd-wind-5"></span></p>
-                            <p class="fd-secondary">Humidity:<span id="fd-humidity-5"></span></p>
+                            <p class="fd-secondary"><span id="fd-temp-5"></span></p>
+                            <p class="fd-secondary"><span id="fd-wind-5"></span></p>
+                            <p class="fd-secondary"><span id="fd-humidity-5"></span></p>
                         </div>
                     </article>
                 </div>
@@ -104,6 +95,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
