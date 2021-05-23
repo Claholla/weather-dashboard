@@ -31,24 +31,24 @@ function addHistory() {
     searchHistory.innerHTML = "";
     
     for (let i = 0; i < saved.length; i++) {
-      historyItem = document.createElement("button");
-      historyItem.setAttribute("type", "button");
-      historyItem.setAttribute("class", "btn btn-secondary");
+      let historyItem = document.createElement("input");
+      historyItem.setAttribute("type", "text");
+      historyItem.setAttribute("readonly", true);
+      historyItem.setAttribute("class", "btn btn-success");
       historyItem.setAttribute("value", saved[i]);
       historyItem.textContent = saved[i];
       searchHistory.append(historyItem);
+      searchHistory.addEventListener("click",function() {
+        callWeather(historyItem.textContent);
+        return;
+      })
+      
     }
 }
-// Search history event listener
-let historyItem = document.createElement("button");
-historyItem.addEventListener("click", function() {
-   callWeather(historyItem.value)
-})
-// Open Weather API call
-function callWeather() {
 
-  searchInput = document.getElementById('search-input');
-  inputValue = searchInput.value;
+// Open Weather API call
+function callWeather(inputValue) {
+
   fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue+"&appid=90e68ce77b8435beeccb450f414ea93b")
   .then(response => response.json()) 
   .then(data => {
@@ -157,5 +157,3 @@ function callWeather() {
 };
 
 addHistory();
-
-
